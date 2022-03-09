@@ -9,13 +9,16 @@ Scanner scanner = new Scanner(System.in);
         String surname=scanner.nextLine();
         System.out.println("Ile masz lat?");
         int age= scanner.nextInt();
-        if(age>18) {
+        if(age>18&& age<29) {
             System.out.println(name+ " " +surname
-                    + ". Możesz wejść");
-        }else {
+                    + ". Możesz wejść.");
+        }else if(age==30){
           System.out.println(name+ " " +surname
-                  + ". Nie możesz wejść");
-      }
+                  + ". 30latki nie wchodzą.");
+      }else {
+            System.out.println(name+ " " +surname
+                    + ". Nie możesz wejść.");
+        }
 
 
 }
